@@ -1,0 +1,273 @@
+
+/* Google font Playfair Display import */
+@import 
+url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Playfair Display', serif; */
+
+
+/* Google font Montserrat import*/
+@import 
+url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+body{
+margin: 0;
+padding: 0;
+background-color: rgba(24, 26, 26, 0);
+overflow-x: hidden;
+font-family: 'Playfair Display', serif;
+height: 100vh;
+color:black;
+width: 100%;
+}
+
+/* <!-- ///////////////////////////////// Major Heading============================ --> */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  z-index: 4;
+  position: absolute;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 25%;
+  margin-left: 49%;
+  overflow-x: hidden;
+  color: #3E3635;
+  position: absolute;
+  width: 60%;
+  /* background-color: aliceblue; */
+}
+.container2 .textcontainer {
+  /* background-color: aqua; */
+  z-index:4;
+  position: relative;
+  top:-13%;
+  right:30%;
+  display: flex;
+  width: 100%;
+  /* flex-direction: end; */
+  flex-direction: column;
+    align-items: flex-end;
+}
+.container2 h1 span {
+  font-size: 150px;
+  
+  /* background-color: aqua; */
+  /* position: relative;
+  top:-30%;
+  left:10%; */
+  font-weight: bolder;
+  cursor: default;
+}
+.container2 p{
+ font-size: 30px;
+ /* background-color:rgb(255, 255, 255); */
+ margin-bottom:-7%;
+ padding-right: 11px;
+ font-weight: bolder;
+ /* text-align:end; */
+}
+.glass{
+  background-color: #3E3635;
+  z-index: 4;
+}
+
+
+
+
+/* ======================= background carousel============================ */
+
+/*custom css*/
+.bg1{
+    background-image: url(https://i.postimg.cc/Kvh7h7j7/Banner-1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    }
+    .bg2{
+    background-image: url(https://i.postimg.cc/yYq8xkXT/Banner-2-2.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    }
+    .bg3{
+    background-image: url(https://i.postimg.cc/J7HhRbJn/Banner-3-2.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    }
+    
+    .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 20%;
+    }
+    .carousel-caption h4 {
+    font-size: 65px;
+    font-family: poppins;
+    letter-spacing: 2px;
+    }
+    .carousel-caption p {
+    font-size: 20px;
+    font-family: poppins;
+    }
+    
+    .carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+    height: 100vh;
+    }
+    
+    .carousel-fade .carousel-inner .active {
+    opacity: 1;
+    }
+    
+    @media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    }
+
+
+    /* ===================Carousel Image for phone ================= */
+
+@media screen and (max-width: 768px){
+    .carousel-inner{
+        z-index: 0;
+        max-width: 100%;
+        /* display: none; */
+    }
+    body{
+        background-color: #ffffff;
+    }
+    .bg1{
+      background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      }
+
+    .bg2{
+        background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        }
+
+    .bg3{
+        background-image: url(https://i.postimg.cc/6QRDHLm7/i-Phone-11-Pro-Max-3.png);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        }
+      .carousel-item {
+        height: 24rem;
+      }
+    
+  }
+
+
+/* ///////////////////////////////Carousel Image for Tablet ================= */
+
+@media screen and (max-width: 1024px){
+  .carousel-inner{
+      z-index: 0;
+      /* display: none; */
+  }
+  body{
+      background-color: #ffffff;
+      overflow-x: hidden;
+  }
+  .bg1{
+    background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    }
+
+  .bg2{
+      background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      }
+
+  .bg3{
+      background-image: url(https://i.postimg.cc/6QRDHLm7/i-Phone-11-Pro-Max-3.png);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      }
+    .carousel-item {
+      height: 24rem;
+    }
+  
+}
+
+
+/* ////////////////////////////////Carousel Image for Phones ================= */
+
+@media screen and (max-width: 584px){
+  .carousel-inner{
+      z-index: 0;
+      /* display: none; */
+  }
+  body{
+      background-color: #ffffff;
+      overflow-x: hidden;
+  }
+  .bg1{
+    background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
+    background-image: url();
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    }
+
+  .bg2{
+      background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      }
+
+  .bg3{
+      background-image: url(https://i.postimg.cc/6QRDHLm7/i-Phone-11-Pro-Max-3.png);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      }
+    .carousel-item {
+      height: 24rem;
+    }
+  
+}

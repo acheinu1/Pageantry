@@ -1,0 +1,46 @@
+
+
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:white;
+} */
+
+.glider-contain div {
+    display: flex;
+    z-index: 9;
+    /* background-color: aqua; */
+}
+
+.glider {
+    width:60%;
+    background-color: rgb(224,224,224);
+    border-radius: 10px;
+    /* height:170px; */
+    position: absolute;
+}
+
+.glider div {
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+    background-color:red;
+    
+}
+.glider div img {
+    width: auto;
+    max-width: 50%;
+    max-height: 90px;
+}
+
+.glider div p {
+    font-weight: 600;
+    padding: 3rem;
+    font-size:20px;
+}
+
+/* button.glider-next, button.glider-prev {
+    position: static;
+    padding: 1rem;
+} */
