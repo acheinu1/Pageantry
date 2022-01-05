@@ -1,5 +1,6 @@
 .main-header {
-    position: fixed;
+    /* position: fixed; */
+    position:absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10,10 +11,11 @@
         -ms-flex-align: center;
             align-items: center;
     height: 65px;
-    width: 100vw;
+    width: 102vw;
     padding: 0 10vw;
-    color: #000;
-    z-index: 1;
+    color: 3E3635;
+    font-weight: bolder;
+    z-index: 6;
     -webkit-transition: .4s ease-out;
     transition: .4s ease-out;
   }
@@ -29,6 +31,15 @@
     display: -ms-flexbox;
     display: flex;
     list-style: none;
+  }
+
+  .main-header .nav-links button {
+    background:rgb(255, 15, 15);
+    padding: 4px 3px;
+    margin:0 2px;
+    color:#fff;
+    outline: none;
+    border: none;
   }
   
   .main-header .nav-links .nav-link {
@@ -55,7 +66,7 @@
   
   .main-header .nav-links .nav-link a {
     margin: .2rem;
-    padding: 1rem .5rem;
+    padding: 1rem 2.5rem;
   }
   
   .main-header .nav-links .nav-link a:hover {

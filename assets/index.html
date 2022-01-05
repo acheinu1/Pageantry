@@ -10,7 +10,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/glide.css"> -->
     <title>Miss Ecowas</title>
 </head>
 <body>
@@ -31,46 +30,43 @@
           <li class="nav-link"><a href="#">Home</a></li>
           <li class="nav-link"><a href="#">About Us</a></li>
           <li class="nav-link"><a href="#">Contact Us</a></li>
-          <li class="nav-link"><a href="#">Register Free</a></li>
+          <li class="nav-link"><button><a href="#">Register Free</a></button></li>
         </ul>
 
       </header>
       <!-- ////////////////////////////////// Navbar ends ===================================== -->
 
-      <!-- ///////////////////////////////// Major Heading -->
-    <div class="general_container">
+      <!-- ///////////////////////////////// Major Heading ==================================== -->
       <div class="container2">
-        <div class="textcontainer">
+      <div class="textcontainer">
           <p>Who wears the</p>
-          <h1> <span class="txt-type" >Crown</span></h1>
-        </div>
+          <h1> <span class="txt-type" >Crown?</span></h1>
       </div>
-      <!-- ////////////////////////////// Glider============================================== -->
 
-      <!-- <div class="glider-contain">
-        <div>
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <div class="glider">
-                <div>
-                    <img src="https://i.postimg.cc/02WRcr63/Cryptocurrency-1.jpg" alt="Person 1 image">
-                    <p>Cash Prize of Over 3 million naira to be won .</p>
-                </div>
-                <div>
-                    <img src="https://i.postimg.cc/02WRcr63/Cryptocurrency-1.jpg" alt="Person 2 image">
-                    <p>A brand new car</p>
-                </div>
-                <div>
-                    <img src="https://i.postimg.cc/02WRcr63/Cryptocurrency-1.jpg" alt="Person 3 image">
-                    <p>International Trip and official residence</p>
-                </div>
-            </div>
-            <button aria-label="Next" class="glider-next">»</button>
-        </div>
-        <div role="tablist" id="dots"></div>
-     </div>
-  </div> -->
-    <!-- ////////////////////////////////////////////Glide ends======================================= -->
+      <!-- ////////////// Glider======= -->
 
+      <div class="glider-contain">
+      <div class="glider">
+          <div>
+            <img src="../assets/Images/Money.png" alt="money">
+            <p>Over 3 million naira to be won by contestants.</p>
+          </div>
+          <div>
+            <img src="../assets/Images/Money.png" alt="money">
+            <p>A Brand new car.</p>
+          </div>
+          <div>
+            <img src="../assets/Images/Money.png" alt="money">
+            <p>International trips and official residence</p>
+          </div>
+      </div>
+        <!-- <button label="Previous" class="glider-prev">«</button>
+        <button label="Next" class="glider-next">»</button> -->
+        <!-- <div role="tablist" id="dots"></div> -->
+      </div>
+    
+     <!-- /////////////////Glide ends===== -->
+      </div>
 
      <!-- /////////////////////////////////// Sliding Background ================================ -->
         <div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -93,27 +89,30 @@
               </div>
           </div>
       </div>
-         <!-- /////////////////////////////////// Sliding Background ================================ -->
+   <!-- /////////////////////////////////// Sliding Background ================================ -->
 
 
+<section class="registration" id="">
+  
 
+</section>
 
-<script src="./Js/script.js"></script>
+<script src="./Js/script.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>    
 <script>
-   // Glide //////////////////////////////////////////////////////
+  // /////////////////////////// Glider Js codes ==============================
 
   new Glider(document.querySelector('.glider'), {
-            slidesToShow: 1,
-            dots: '#dots',
-            draggable: true,
-            arrows: {
-                prev: '.glider-prev',
-                next: '.glider-next'
-            }
-        });
+  slidesToShow: 1,
+  dots: '#dots',
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
 
-  // Glide //////////////////////////////////////////////////////
+// /////////////////////////// Glider Js Code================================
   $(function(){
       $("#mycarousel").carousel({
           interval: 1500
