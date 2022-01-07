@@ -4,7 +4,8 @@
     "sources": [
         "../../sass/main.scss",
         "../../sass/header.scss",
-        "../../sass/animations.scss"
+        "../../sass/animations.scss",
+        "../../sass/socialicons.scss"
     ],
     "names": [],
     "file": "navbar.css"
