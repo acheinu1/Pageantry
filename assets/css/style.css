@@ -13,12 +13,15 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;50
 body{
 margin: 0;
 padding: 0;
-background-color: rgba(24, 26, 26, 0);
+background-color: #181616;
 overflow-x: hidden;
 font-family: 'Playfair Display', serif;
 height: 100vh;
 color:black;
 width: 100%;
+}
+.alltags{
+  background-color: #181616;
 }
 
 /* <!-- ///////////////////////////////// Major Heading============================ --> */
@@ -36,7 +39,7 @@ width: 100%;
   overflow-x: hidden;
   position: absolute;
   width: 60%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .container2 .textcontainer {
   z-index:4;
@@ -48,7 +51,6 @@ width: 100%;
   color: #3E3635;
   flex-direction: column;
     align-items: flex-end;
-    background-color: red;
     margin: 0 auto;
 }
 .container2 .textcontainer  h1 span {
@@ -75,7 +77,7 @@ width: 100%;
 
 @media screen and (max-width: 768px){
   .container2{
-    background-color: #e0e6eb00;
+    background-color: #474a4d00;
     /* display: none; */
     width: 100%;
     padding: 0;
@@ -86,12 +88,10 @@ width: 100%;
     transform: translate(-50%, -50%);
   }
   .container2 .textcontainer {
-    background-color: #18cf2100;
     max-width: 800px;
     /* position: relative; */
-    top: 18%;
+    top: -10%;
     left: 35%;
-    background-color: #18cf22;
     transform: translate(-50%, -50%);
     /* text-align: center; */
     align-items: center;
@@ -115,6 +115,32 @@ width: 100%;
    }
 }
 
+
+/* ////////////////////////////// major heading media query small phones================ */
+
+@media screen and (max-width: 375px){
+ 
+  .container2 .textcontainer {
+    max-width: 500px;
+    /* position: relative; */
+    top: -10%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    align-items: center;
+  }
+  .container2 .textcontainer h1 span {
+    font-size: 70px;
+  }
+  .container2 .textcontainer p{
+    font-size: 20px;
+   
+    
+    /* text-align:end; */
+    /* flex-direction: row;
+    justify-content:center; */
+   }
+}
 
 /* //////////////////////////////////////Glide ============================ */
 
@@ -190,7 +216,7 @@ width: 100%;
     margin: 0 auto;
     background-color: #e01a1a60;
     /* display:none; */
-    top: 90%;
+    top: -90%;
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     
@@ -228,6 +254,53 @@ width: 100%;
 
 }
 
+/* /////////////////////////////// Glider media query for small phones */
+
+@media screen and (max-width: 375px){
+
+  .glider-contain div {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #e01a1a60;
+    /* display:none; */
+    top: -90%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    
+  }
+  .glider {
+    border-radius: 10px;
+    width: 300px;
+    max-height: 150px;
+    position: relative;
+    left: 0%;
+  
+  }
+  .glider div {
+    /* display:none; */
+    background-color:#2980b9;
+    max-width: 900px;
+  }
+  .glider div p {
+    font-size: 16px;
+    /* padding:0 10px; */
+    /* margin: 0px; */
+    text-align: right;
+
+  }
+
+  .glider div img {
+    /* display:none; */
+    max-width: 110px;
+    /* max-height: 400px; */
+  }
+
+  .glider div p span {
+    font-size: 20px;
+  }
+
+}
 
 /* ======================= background carousel============================ */
 
@@ -312,9 +385,11 @@ width: 100%;
 
     /* ===================Carousel Image for phone ================= */
 
-@media screen and (max-width: 768px){
+   /* ===================Carousel Image for phone ================= */
+
+   @media screen and (max-width: 768px){
     .carousel-inner{
-        z-index: 0;
+        z-index: 4;
         max-width: 100%;
         /* display: none; */
     }
@@ -346,7 +421,6 @@ width: 100%;
       }
     
   }
-
 
 /* ///////////////////////////////Carousel Image for Tablet ================= */
 
@@ -397,30 +471,28 @@ width: 100%;
       background-color: #ffffff;
       overflow-x: hidden;
   }
-  /* .bg1{
-    background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
-    background-image: url();
+  .bg1{
+    background-image: url(https://i.postimg.cc/1336xdZF/smaller-mobile-1.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-    } */
+    }
 
-  /* .bg2{
-      background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
+  .bg2{
+      background-image: url(https://i.postimg.cc/PqB8wrvb/smaller-mobile-2.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
       }
 
   .bg3{
-      background-image: url(https://i.postimg.cc/6QRDHLm7/i-Phone-11-Pro-Max-3.png);
+      background-image: url(https://i.postimg.cc/HsHXzxZB/smaller-mobile-3.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
+      display: none;
       }
-    .carousel-item {
-      height: 24rem;
-    } */
+   
   
 }
 
@@ -500,14 +572,15 @@ width: 100%;
   .registration{
     position: relative;
     width: 100%;
-    height: 50vh;
-    background-image: url(https://i.postimg.cc/C12rsT04/registration-phone-banner.png);
-    background-size: 100%;
-    background-position: center;
+    height: 55vh;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-position: center; 
   }
   .glassbox{
     width: 90vw;
-    height: 45vh;
+    height: 50vh;
   }
   .glasscontent h3{
     color: #fff;
@@ -527,11 +600,36 @@ width: 100%;
   }
 
 }
+/* /////////////////////////registration form media query for small phones=========== */
 
-/* /* ////////////////////////Gallery ?/ Slick slider ============================ */ 
-.Gallery{
-  height: 130vh;
+
+@media screen and (max-width: 375px){
+  .registration{
+    position: relative;
+    width: 100%;
+    height: 62vh;
+    /* background-color: #18cf22; */
+  }
+  .glassbox{
+    width: 90vw;
+    height: 55vh;
+  }
+  .glasscontent h3{
+    color: #fff;
+    font-size:20px;
+    line-height: 30px;
+  }
+  .glasscontent button{
+    font-size:20px;
+    letter-spacing: 1px;
+  }
+
 }
+
+
+/* ============================gallery section ================================ */
+
+
 .gallerycontainer{
   padding:100px 0 0;
   background-color: #181616;
@@ -540,115 +638,238 @@ width: 100%;
 }
 .galleryinner{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
 }
 .Gallery h2{
   text-transform: uppercase;
-  max-width: 60%;
+  max-width: 100%;
   color: #ffffff;
-  margin-left: 5%;
-  margin-bottom: 3%;
+  /* margin-bottom: 7%; */
   font-size: 40px;
-  display: inline-block;
 }
-.Gallery .galleryslider{
-  margin-top:250px;
-  /* margin-bottom: 60px; */
-  width: 90%;
+/* ///////////////////////////////// new codes================================ */
+.Gallery{
+  background-color: #ffffff;
+  height: 120vh;
+}
+
+
+.marquee-content img{
+  width: 400px !important;
+  padding: 10% 15%;
+}
+
+:root {
+  --marquee-width: 70vw;
+  --marquee-height: 55vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 3;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.MarqueeContainer{
+  /* background-color: black; */
+  margin-top: 5%;
+  width: 70%;
+  padding: 5%, 5%;
+  /* margin-left: 10%; */
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  /* background-color: #111; */
+  color: rgba(180, 112, 112, 0);
+  overflow: hidden;
+  position: relative;
+  /* border-radius: 20px; */
+  /* margin-bottom: 10%; */
+}
+
+.marquee:before, .marquee:after {
   position: absolute;
-  /* top: 50%; */
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
 }
-
-
-.Gallery .galleryslider .item{
-  width: 300px;
-}
-.slick-arrow{
-  position: absolute;
-  top:-60px;
-}
-.slick-prev{
-  left: inherit;
-  right: 180px;
-}
-
-.slick-next{
-  right: 90px;
-}
-
-.slick-next:before,
-.slick-prev:before{
-  content:"";
-  position: absolute;
-  bottom: 34px;
+.marquee:before {
   left: 0;
-  background: #fff url(/assets/Images/grommet-icons_next.svg) no-repeat;
-  background-size: 29px;
-  background-position: center;
-  width:70px;
-  height:70px;
-  line-height: 70px;
-  border: 1px solid #fff;
-  opacity: 1;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
 }
 
-.slick-prev:before{
-  background: transparent url(/assets/Images/grommet-icons_form-previous.svg) no-repeat;
-  background-size:50px;
-  background-position: center;
+.marquee-content li img {
+  width: 100%;
+  /* height: 100%; */
+  /* border: 2px solid rgba(238, 238, 238, 0.171); */
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 22rem; }
+}
+
+
+
+
+
+
+/* ==================================Gallery section media query ============================= */
+/* ========================================================================================== */
+
+@media(min-width: 1200px) {
+ 
+}
+
+@media(max-width: 800px) {
   
-  margin-left:400px;
 }
 
-
-/* /////////////////////////////////////Gallery media query========================== */
-
-@media screen and (max-width: 768px){
+@media(max-width: 786px) {
+  .Gallery{
+    height:70vh;
+  }
   .Gallery h2{
     text-transform: uppercase;
     max-width: 100%;
-    margin-left: 5%;
-    margin-bottom: 3%;
+    margin:5%;
+    margin-bottom: 20%;
     font-size: 24px;
     text-align: center;
     height: 80px;
     background-color: #18cf2100;
     line-height: 40px;
   }
-  .gallerycontainer{
+  /* .gallerycontainer{
     height: 180vh;
-  }
+  } */
   .galleryinner{
     display:flex;
     flex-direction: column;
-    background-color: #2980b9;
   }
 
-  .slick-arrow{
-    top:-10px;
-    background-color: #18cf22;
+  .marquee-content img{
+  width: 400px !important;
+  margin-bottom: 100px !important;
   }
-  .Gallery .galleryslider{
-    margin-top:550px;
-    /* margin-bottom: 60px; */
-    width: 80vw;
-    
-    top: 50%;
-    left: 50%;
-    height: 10vh;
-    transform: translate(-50%, -50%);
-    background-color: #4b2727;
+  :root {
+    --marquee-width: 90vw;
+    --marquee-height: 50vh;
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 1;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+
+  .marquee:before {
+    left: 0;
+    background: linear-gradient(to right, rgba(17, 17, 17, 0.185) 0%, transparent 100%);
+  }
+  .marquee:after {
+    left: 30px;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+    display:none;
+  }
+  .MarqueeContainer{
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    width: 90%;
+    padding: 0;
+    /* height:900px !important; */
+    /* margin-left: 10%; */
+  }
+  marquee{
+    /* background-color:#181616; */
+    width: 100%;
+    margin-left:40%;
   }
 }
+
+
+/* ///////////////////////////////////Gallery section media query for small phones================ */
+
+@media(max-width: 375px){
+  .Gallery{
+    height:100vh;
+    background:rgb(163, 41, 41);
+  }
+  .Gallery h2{
+    text-transform: uppercase;
+    max-width: 100%;
+    margin:10%;
+    margin-bottom: 15%;
+    font-size: 20px;
+    text-align: center;
+    height: 60px;
+    background-color: #18cf2100;
+    line-height: 40px;
+  }
+  /* .gallerycontainer{
+    height: 180vh;
+  } */
+  .galleryinner{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .marquee-content img{
+  width: 400px !important;
+  margin-bottom: 10px !important;
+  }
+  
+}
+
+/* //////////////////////////////////new code ends============================= */
+
+/* /////////////////////////////////////Gallery media query========================== */
+
+
 
 
 
 
 /* //////////////////////////////SOCIAL SECTIONS=================================== */
 .socialsection{
-  background-color: #181616;
-  height: 60vh;
+  /* background-color: #aa99991f; */
+  height: 50vh;
   position: relative;
 }
 .Socialcontainer{
@@ -660,6 +881,7 @@ width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-bottom: 20%;
 }
 .social-text h1{
   font-size: 40px;
@@ -736,18 +958,22 @@ width: 100%;
 
 
 .phonenumber h2{
-  color:#fff;
-  font-size: 53px;
+  color:#adadad;
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: -10%;
 }
 /* ////////////////////////////////footer============================ */
 footer{
   position: relative;
-  height:30vh;
-  background:#181616;
+  height:10vh;
+  background:#303030;
   color:#fff;
-  font-size:20px;
+  font-size:15px;
   font-family: poppins;
-  font-weight: 500;
+  font-weight: 200;
+  letter-spacing:5px;
+  margin-top: 10%;
 }
 .fcontainer{
   display: flex;
@@ -755,7 +981,177 @@ footer{
   align-items:center;
   justify-content: center;
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* /////////////////////////////footer/social section media query========================= */
+
+@media(max-width: 786px) {
+  .socialsection{
+    height: 35vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .Socialcontainer{
+    margin-top:5%;
+    text-align: center;
+    width: 100%;
+  }
+  .social-text h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: #fff;
+    margin-bottom: 15%;
+  }
+  .socialicons ul{
+    list-style:none;
+    padding: 10px 0px;
+  }
+  .socialicons ul li{
+    display:inline-block;
+    line-height:60px;
+    width:55px;
+    height:55px;
+    background-color:#353333;
+    text-align:center;
+    border:1px solid #ffffff;
+    border-radius:50%;
+    margin:5px;
+    transition:0.5s;
+  }
+  .socialicons ul li a{
+    font-size:23px;
+    color:#adadad;
+    transition:0.5s;
+  }
+  .socialicons ul li:nth-child(1),
+  .socialicons ul li:nth-child(2),
+  .socialicons ul li:nth-child(3),
+  .socialicons ul li:nth-child(4) 
+  {
+    margin: 0px 5px;
+  }
+  .phonenumber h2{
+    font-size: 33px;
+  }
+  /* //////////////////////// Social section media query for small phones================== */
+  /* ==================footer media query=============== */
+  footer{
+    
+    font-size:15px;
+    font-family: poppins;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-top: 32%;
+  }
+  .fcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:80%;
+  }
+  .alltags{
+    background-color: #181616;
+  
+          /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+          overflow-x: hidden !important;
+          /* Additional tunning proposed by the community */
+          position: relative;
+          width: 100%;
+  }
+}
+
+
+
+ /* //////////////////////// Social section media query for small phones================== */
+
+@media(max-width: 375px) {
+  .socialsection{
+    height: 40vh;
+    /* overflow-x: hidden; */
+    overflow-y:hidden; 
+    overflow-x:auto;
+  }
+  .Socialcontainer{
+    position: relative;
+    margin-top:5%;
+    text-align: center;
+    width: 100%;
+  }
+  .social-text h1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight:bolder;
+    color: #fff;
+    margin-bottom: 15%;
+  }
+  .socialicons ul{
+    list-style:none;
+    padding: 10px 0px;
+  }
+  .socialicons ul li{
+    display:inline-block;
+    line-height:60px;
+    width:55px;
+    height:55px;
+    background-color:#353333;
+    text-align:center;
+    border:1px solid #ffffff;
+    border-radius:50%;
+    margin:5px;
+    transition:0.5s;
+  }
+  .socialicons ul li a{
+    font-size:23px;
+    color:#adadad;
+    transition:0.5s;
+  }
+  .socialicons ul li:nth-child(1),
+  .socialicons ul li:nth-child(2),
+  .socialicons ul li:nth-child(3),
+  .socialicons ul li:nth-child(4) 
+  {
+    margin: 0px 5px;
+  }
+  .phonenumber h2{
+    font-size: 26px;
+  }
+
+
+  /* //////////////////////// Social section media query for small phones================== */
+
+  
+  /* ==================footer media query=============== */
+  footer{
+    
+    font-size:13px;
+    font-family: poppins;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-top: 32%;
+  }
+  .fcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:80%;
+  }
+  .alltags{
+    background-color: #181616;
+  
+          /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+          overflow-x: hidden !important;
+          /* Additional tunning proposed by the community */
+          position: relative;
+          width: 100%;
+  }
 }
