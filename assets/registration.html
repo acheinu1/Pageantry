@@ -4,16 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Images/Group 29.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         body iframe{
             height:100vh;
         }
+        .iframeDiv{
+            text-align:center;
+        }
+        body{
+            background-color:burlywood;
+        }
     </style>
+    <title>Miss Ecowas</title>
 </head>
 <body>
+
+      <!-- ?//////////////////////// Navbar Starts============================================= -->
+      <header class="main-header">
+
+        <!-- /////// Logo Container================= -->
+        <div class="logo">
+          <a href="#">Miss Ecowas</a>
+        </div>
+    
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+
+        <!-- /////// navbar links ============ -->
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#">About Us</a></li>
+          <li class="nav-link"><a href="#">Contact Us</a></li>
+          <!-- <li class="nav-link"><button><a href="./registration.html">Register Free</a></button></li> -->
+        </ul>
+
+      </header>
+<!-- ////////////////////////////////// Navbar ends ===================================== -->
+
+<!-- /////////////////////////Form=========================== -->
+
+<div class="form-container iframeDiv">
     <h2>Register Free below</h2>
-    <br>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGK5Sgxa4xFSt8eG2k_9yj_79lhQ-woyriOsX0lnxaqp3umw/viewform?embedded=true" width="640" height="1655" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<!-- ////////////////////////////////////////// Connect with us========================= -->
+<section class="socialsection">
+    <div class="Socialcontainer">
+        <div class="social-text">
+            <h1>connect with us</h1>
+        </div>
+        <div class="socialicons">
+            <!-- <a href="#" class="Twitter"><img src="/assets/Images/entypo-social_twitter-with-circle.svg"></a>
+            <a href="https://www.instagram.com/missecowasnigorg/" class="Instagram"><img src="/assets/Images/ph_instagram-logo-fill.svg"></a>
+            <a href="https://www.facebook.com/missecowasnig" class="facebook"><img src="/assets/Images/entypo-social_facebook-with-circle.svg"></a>
+            <a href="https://wa.me/2348137007680" class="Whatsapp"><img src="/assets/Images/dashicons_whatsapp.svg"></a> -->
+
+            <ul>
+              <li><a href=""><i class="fab fa-facebook"> </i></a></li>
+              <li><a href="https://www.instagram.com/missecowasnigorg/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/missecowasnig"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://wa.me/2348137007680"><i class="fab fa-whatsapp"></i></i></a></li>
+            </ul>
+
+
+        </div>
+        <div class="phonenumber">
+          <h2>08137007680</h2>
+        </div>
+    </div>
+</section>
+
+<!-- //////////////////////////////////////////Footer======================================= -->
+<footer>
+      <div class="fcontainer">
+           <p>  &copy; Copyright - Miss Ecowas Africa | All Rights Reserved</p> 
+      </div>
+</footer>
+
+<script src="./Js/script.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+
+<script>
+ 
+
+  // /////////////////////////// Glider Js codes ==============================
+
+  new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  dots: '#dots',
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+
+// /////////////////////////// Glider Js Code================================
+
+  ////////////////////////Slick carousel =====================================
+  $('.galleryslider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  speed: 1500,
+});
+
+
+
+  ////////////////////////Slick carousel =====================================
+
+
+  $(function(){
+      $("#mycarousel").carousel({
+          interval: 1500
+      });
+  });
+</script>
+
 </body>
 </html>

@@ -30,39 +30,37 @@ width: 100%;
   align-items: flex-end;
   height: 100%;
   z-index: 4;
-  max-width: 50%;
   margin: 0 auto;
   margin-bottom: 25%;
   margin-left: 49%;
   overflow-x: hidden;
   position: absolute;
   width: 60%;
-  /* background-color: aqua; */
+  background-color: aqua;
 }
 .container2 .textcontainer {
   z-index:4;
   position: relative;
   top:8%;
-  left:2%;
+  /* left:2%; */
   display: flex;
   max-width: 1200px;
   color: #3E3635;
   flex-direction: column;
     align-items: flex-end;
-    /* background-color: red; */
+    background-color: red;
     margin: 0 auto;
 }
-.container2 h1 span {
+.container2 .textcontainer  h1 span {
   font-size: 110px;
-  font-weight: bolder;
+  font-weight: bolder !important;
   cursor: default;
-  text-transform: uppercase;
   letter-spacing: -2px;
 }
-.container2 p{
+.container2 .textcontainer p{
  font-size: 30px;
  /* background-color:rgb(255, 255, 255); */
- margin-bottom:-4%;
+ margin-bottom:-10%;
  padding-right: 11px;
  font-weight: bolder;
  /* text-align:end; */
@@ -71,6 +69,52 @@ width: 100%;
   background-color: #3E3635;
   z-index: 4;
 }
+/* ///////////////////////////// Major heading media query================= */
+
+
+
+@media screen and (max-width: 768px){
+  .container2{
+    background-color: #e0e6eb00;
+    /* display: none; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 18%;
+    left: 50%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+  }
+  .container2 .textcontainer {
+    background-color: #18cf2100;
+    max-width: 800px;
+    /* position: relative; */
+    top: 18%;
+    left: 35%;
+    background-color: #18cf22;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    align-items: center;
+  }
+  .container2 .textcontainer h1 span {
+    font-size: 85px;
+    cursor: default;
+    font-weight: 900px;
+    text-align: center;
+  }
+  .container2 .textcontainer p{
+    font-size: 30px;
+    margin-bottom:-14%;
+    padding-right: 0px;
+    font-weight: bolder;
+    text-align: center;
+    
+    /* text-align:end; */
+    /* flex-direction: row;
+    justify-content:center; */
+   }
+}
+
 
 /* //////////////////////////////////////Glide ============================ */
 
@@ -105,7 +149,7 @@ width: 100%;
   width: 400px;
   position: relative;
   top: 50%;
-  left: 7%;
+  /* left: 7%; */
   margin-bottom: -90%;
   /* margin-left: 50%; */
 }
@@ -116,6 +160,7 @@ width: 100%;
   border-radius: 17px;
   width: 100%;
 }
+
 .glider div img {
   
   max-width: 40%;
@@ -129,6 +174,58 @@ width: 100%;
   max-width: 60%;
   max-height: 400px;
   color:white ;
+  margin:0;
+}
+.glider div p span {
+  font-size: 30px;
+}
+
+/* /////////////////////////////Glider box Media query==================== */
+
+@media screen and (max-width: 768px){
+
+  .glider-contain div {
+    display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #e01a1a60;
+    /* display:none; */
+    top: 90%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    
+  }
+  .glider {
+    border-radius: 10px;
+    width: 350px;
+    max-height: 150px;
+    position: relative;
+    left: 0%;
+  
+  }
+  .glider div {
+    /* display:none; */
+    background-color:#2980b9;
+    max-width: 1300px;
+  }
+  .glider div p {
+    font-size: 21px;
+    padding:0 10px;
+    /* margin: 0px; */
+    text-align: right;
+
+  }
+
+  .glider div img {
+    /* display:none; */
+    max-width: 160px;
+    /* max-height: 400px; */
+  }
+
+  .glider div p span {
+    font-size: 25px;
+  }
+
 }
 
 
@@ -136,19 +233,19 @@ width: 100%;
 
 /*custom css*/
     .bg1{
-    background-image: url(https://i.postimg.cc/Kvh7h7j7/Banner-1.jpg);
+    background-image: url(https://i.postimg.cc/PJ6fvdPX/Banner-1.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     }
     .bg2{
-    background-image: url(https://i.postimg.cc/yYq8xkXT/Banner-2-2.png);
+    background-image: url(https://i.postimg.cc/SNTjJfM6/Banner-2.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     }
     .bg3{
-    background-image: url(https://i.postimg.cc/J7HhRbJn/Banner-3-2.png);
+    background-image: url(https://i.postimg.cc/mgKDSZVh/Banner-3-1.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
@@ -225,21 +322,21 @@ width: 100%;
         background-color: #ffffff;
     }
     .bg1{
-      background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
+      background-image: url(https://i.postimg.cc/yx7WSfjP/phone-banner-1.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
       }
 
     .bg2{
-        background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
+        background-image: url(https://i.postimg.cc/MKKv6FvZ/phone-banner-2.png);
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
         }
 
     .bg3{
-        background-image: url(https://i.postimg.cc/6QRDHLm7/i-Phone-11-Pro-Max-3.png);
+        background-image: url(https://i.postimg.cc/05Czqs5H/phone-banner-3.png);
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -262,7 +359,7 @@ width: 100%;
       background-color: #ffffff;
       overflow-x: hidden;
   }
-  .bg1{
+  /* .bg1{
     background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
     -webkit-background-size: cover;
     background-size: cover;
@@ -284,7 +381,7 @@ width: 100%;
       }
     .carousel-item {
       height: 24rem;
-    }
+    } */
   
 }
 
@@ -300,15 +397,15 @@ width: 100%;
       background-color: #ffffff;
       overflow-x: hidden;
   }
-  .bg1{
+  /* .bg1{
     background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
     background-image: url();
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-    }
+    } */
 
-  .bg2{
+  /* .bg2{
       background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
       -webkit-background-size: cover;
       background-size: cover;
@@ -323,7 +420,7 @@ width: 100%;
       }
     .carousel-item {
       height: 24rem;
-    }
+    } */
   
 }
 
@@ -363,6 +460,9 @@ width: 100%;
   transform: translate(-50%, -50%);
 }
 
+.glasscontent h3{
+  color: #fff;
+}
 .glasscontent{
   text-align: center;
   vertical-align: middle;
@@ -375,7 +475,7 @@ width: 100%;
 .glasscontent button{
   margin-top:39px;
   padding: 20px 55px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   background-color: #ff0000;
   outline: none;
   border: none;
@@ -392,6 +492,41 @@ width: 100%;
 }
 
 /* ///////////////////////////Registration Form ends============================ */
+
+
+/* ////////////////////////////Registration form media query==================== */
+
+@media screen and (max-width: 768px){
+  .registration{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url(https://i.postimg.cc/C12rsT04/registration-phone-banner.png);
+    background-size: 100%;
+    background-position: center;
+  }
+  .glassbox{
+    width: 90vw;
+    height: 45vh;
+  }
+  .glasscontent h3{
+    color: #fff;
+    font-size:24px;
+    line-height: 40px;
+  }
+  .glasscontent button{
+    margin-top:20px;
+    padding: 20px 25px;
+    /* text-transform: uppercase; */
+    background-color: #ff0000;
+    outline: none;
+    border: none;
+    font-weight: bolder;
+    font-size:23px;
+    letter-spacing: 1px;
+  }
+
+}
 
 /* /* ////////////////////////Gallery ?/ Slick slider ============================ */ 
 .Gallery{
@@ -423,6 +558,11 @@ width: 100%;
   /* top: 50%; */
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.Gallery .galleryslider .item{
+  width: 300px;
 }
 .slick-arrow{
   position: absolute;
@@ -460,6 +600,49 @@ width: 100%;
   
   margin-left:400px;
 }
+
+
+/* /////////////////////////////////////Gallery media query========================== */
+
+@media screen and (max-width: 768px){
+  .Gallery h2{
+    text-transform: uppercase;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-size: 24px;
+    text-align: center;
+    height: 80px;
+    background-color: #18cf2100;
+    line-height: 40px;
+  }
+  .gallerycontainer{
+    height: 180vh;
+  }
+  .galleryinner{
+    display:flex;
+    flex-direction: column;
+    background-color: #2980b9;
+  }
+
+  .slick-arrow{
+    top:-10px;
+    background-color: #18cf22;
+  }
+  .Gallery .galleryslider{
+    margin-top:550px;
+    /* margin-bottom: 60px; */
+    width: 80vw;
+    
+    top: 50%;
+    left: 50%;
+    height: 10vh;
+    transform: translate(-50%, -50%);
+    background-color: #4b2727;
+  }
+}
+
+
 
 
 /* //////////////////////////////SOCIAL SECTIONS=================================== */
