@@ -214,7 +214,7 @@ width: 100%;
     display: flex;
     max-width: 1050px;
     margin: 0 auto;
-    background-color: #e01a1a60;
+    /* background-color: #e01a1a60; */
     /* display:none; */
     top: -90%;
     /* left: 50%; */
