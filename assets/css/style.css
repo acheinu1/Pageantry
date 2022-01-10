@@ -123,7 +123,7 @@ width: 100%;
   .container2 .textcontainer {
     max-width: 500px;
     /* position: relative; */
-    top: -10%;
+    top: -23%;
     left: 35%;
     transform: translate(-50%, -50%);
     /* text-align: center; */
@@ -231,12 +231,11 @@ width: 100%;
   }
   .glider div {
     /* display:none; */
-    background-color:#2980b9;
     max-width: 1300px;
   }
   .glider div p {
     font-size: 21px;
-    padding:0 10px;
+    padding:0 0px;
     /* margin: 0px; */
     text-align: right;
 
@@ -262,9 +261,9 @@ width: 100%;
     display: flex;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #e01a1a60;
+    /* background-color: #e01a1a60; */
     /* display:none; */
-    top: -90%;
+    top: -180%;
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     
@@ -279,7 +278,7 @@ width: 100%;
   }
   .glider div {
     /* display:none; */
-    background-color:#2980b9;
+    /* background-color:#2980b9; */
     max-width: 900px;
   }
   .glider div p {
