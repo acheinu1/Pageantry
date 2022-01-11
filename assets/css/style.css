@@ -77,12 +77,12 @@ width: 100%;
 
 @media screen and (max-width: 768px){
   .container2{
-    background-color: #474a4d00;
+    background-color: #b9c3ce00;
     /* display: none; */
     width: 100%;
     padding: 0;
     margin: 0;
-    top: 18%;
+    top: 14%;
     left: 50%;
     height: 100vh;
     transform: translate(-50%, -50%);
@@ -90,20 +90,20 @@ width: 100%;
   .container2 .textcontainer {
     max-width: 800px;
     /* position: relative; */
-    top: -10%;
-    left: 35%;
+    top: -7%;
+    left: 32%;
     transform: translate(-50%, -50%);
     /* text-align: center; */
     align-items: center;
   }
   .container2 .textcontainer h1 span {
-    font-size: 85px;
+    font-size: 75px;
     cursor: default;
     font-weight: 900px;
     text-align: center;
   }
   .container2 .textcontainer p{
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom:-14%;
     padding-right: 0px;
     font-weight: bolder;
@@ -123,17 +123,17 @@ width: 100%;
   .container2 .textcontainer {
     max-width: 500px;
     /* position: relative; */
-    top: -23%;
-    left: 35%;
+    top: -10%;
+    left: 32%;
     transform: translate(-50%, -50%);
     /* text-align: center; */
     align-items: center;
   }
   .container2 .textcontainer h1 span {
-    font-size: 70px;
+    font-size: 65px;
   }
   .container2 .textcontainer p{
-    font-size: 20px;
+    font-size: 19px;
    
     
     /* text-align:end; */
@@ -234,7 +234,7 @@ width: 100%;
     max-width: 1300px;
   }
   .glider div p {
-    font-size: 21px;
+    font-size: 18px;
     padding:0 0px;
     /* margin: 0px; */
     text-align: right;
@@ -243,12 +243,12 @@ width: 100%;
 
   .glider div img {
     /* display:none; */
-    max-width: 160px;
+    max-width: 110px;
     /* max-height: 400px; */
   }
 
   .glider div p span {
-    font-size: 25px;
+    font-size: 22px;
   }
 
 }
@@ -263,7 +263,7 @@ width: 100%;
     margin: 0 auto;
     /* background-color: #e01a1a60; */
     /* display:none; */
-    top: -180%;
+    top: -120%;
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     
@@ -291,7 +291,7 @@ width: 100%;
 
   .glider div img {
     /* display:none; */
-    max-width: 110px;
+    max-width: 90px;
     /* max-height: 400px; */
   }
 
@@ -305,19 +305,19 @@ width: 100%;
 
 /*custom css*/
     .bg1{
-    background-image: url(https://i.postimg.cc/PJ6fvdPX/Banner-1.png);
+    background-image: url(https://i.postimg.cc/cHQVvz10/Banner-1-1.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     }
     .bg2{
-    background-image: url(https://i.postimg.cc/SNTjJfM6/Banner-2.jpg);
+    background-image: url(https://i.postimg.cc/mgKDSZVh/Banner-3-1.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     }
     .bg3{
-    background-image: url(https://i.postimg.cc/mgKDSZVh/Banner-3-1.png);
+    background-image: url(https://i.postimg.cc/MHfq35qL/Banner-4.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
@@ -396,21 +396,21 @@ width: 100%;
         background-color: #ffffff;
     }
     .bg1{
-      background-image: url(https://i.postimg.cc/yx7WSfjP/phone-banner-1.png);
+      background-image: url(https://i.postimg.cc/bJBqRWcb/i-Phone-11-Pro-Max-6.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
       }
 
     .bg2{
-        background-image: url(https://i.postimg.cc/MKKv6FvZ/phone-banner-2.png);
+        background-image: url(https://i.postimg.cc/HL3Yrj66/i-Phone-11-Pro-Max-7.png);
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
         }
 
     .bg3{
-        background-image: url(https://i.postimg.cc/05Czqs5H/phone-banner-3.png);
+        background-image: url(https://i.postimg.cc/bJBqRWcb/i-Phone-11-Pro-Max-6.png);
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
@@ -471,21 +471,21 @@ width: 100%;
       overflow-x: hidden;
   }
   .bg1{
-    background-image: url(https://i.postimg.cc/1336xdZF/smaller-mobile-1.png);
+    background-image: url(https://i.postimg.cc/Z58Khwpt/smaller-mobile-1-1.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     }
 
   .bg2{
-      background-image: url(https://i.postimg.cc/PqB8wrvb/smaller-mobile-2.png);
+      background-image: url(https://i.postimg.cc/DwkyD9WP/smaller-mobile-3-1.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
       }
 
   .bg3{
-      background-image: url(https://i.postimg.cc/HsHXzxZB/smaller-mobile-3.png);
+      background-image: url(https://i.postimg.cc/25Cjjn7q/smaller-mobile-2-1.png);
       -webkit-background-size: cover;
       background-size: cover;
       background-position: center;
