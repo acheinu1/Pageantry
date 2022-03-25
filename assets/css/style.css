@@ -522,7 +522,6 @@ width: 100%;
   box-shadow: 10 10 10px rgba(45, 55, 68, 0.30);
   background-size: 90%;
   height: 53vh;
-  z-index: 4;
   margin: 0 auto;
   background-position: center;
   position: absolute;
@@ -560,6 +559,68 @@ width: 100%;
 }
 .glasscontent h3 span{
   font-size:40px;
+}
+
+/* ////////////////////////////Modal============================================ */
+.modal-container{
+  position:fixed;
+  top:0;
+  left:0;
+  opacity: 0;
+  pointer-events: none;
+  height:100%;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  z-index: 9;
+}
+.modal-container.show{
+  pointer-events: auto;
+  opacity: 1;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.897);
+  
+}
+.modals{
+  font-family: poppins;
+  margin:10% auto;
+  background: #fff;
+  padding:30px 30px;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: -8px 7px 5px -1px rgba(0,0,0,0.07);
+-webkit-box-shadow: -8px 7px 5px -1px rgba(0,0,0,0.07);
+-moz-box-shadow: -8px 7px 5px -1px rgba(0,0,0,0.07);
+}
+
+#close{
+  padding:10px 30px;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  margin: 5%;
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.modals h3{
+  padding:2% 0;
+  font-family: Playfair;
+  line-height:30px;
+}
+.modals h3 span{
+  color:#ff0000;
+}
+.modals h4 span{
+  margin-left:10px;
+  font-weight:bold;
+  color: #000000;
+}
+.modals h4{
+  color: #00000098;
 }
 
 /* ///////////////////////////Registration Form ends============================ */

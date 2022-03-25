@@ -33,7 +33,7 @@
           <li class="nav-link"><a href="./index.html">Home</a></li>
           <li class="nav-link"><a href="https://www.instagram.com/missecowasnigorg/" target="_blank">About Us</a></li>
           <li class="nav-link"><a href="https://wa.me/2348137007680" target="_blank">Contact Us</a></li>
-          <!-- <li class="nav-link"><button><a href="./registration.html">Register Free</a></button></li> -->
+          <li class="nav-link"><button><a href="#registration">Register below</a></button></li>
         </ul>
 
       </header>
@@ -95,18 +95,26 @@
    <!-- /////////////////////////////////// Sliding Background ================================ -->
 
 <!-- ///////////////////////////////////// Registration Section ================================ -->
-<section class="registration" id="">
+<section class="registration" id="registration">
 
   <div class="glassbox" id="">
     <div class="glasscontent">
       <h3>
         The Search begins for Miss Ecowas Africa <span>2022 </span>
       </h3>
-     <!-- <button><a href="./registration.html">Register Free</a></button> -->
-     
+     <button id="open">Register</button>
     </div>
   </div>
-
+  <!-- ///////////////////////////////////Modal================================================ -->
+    <div class="modal-container" id="modal_container">
+        <div class="modals">
+          <h3>To register for <span>Miss Ecowas 2022</span>, pay the sum of <span> N5,000 naira</span>, into the account below</h3>
+          <h4> BANK: <span>ZENITH BANK</span></h4>
+          <h4> ACCOUNT NAME: <span>ERLIN DORKODS LTD</span></h4>
+          <h4> ACCOUNT NUMBER: <span>1221263447</span></h4>
+          <button id="close">Close</button>
+        </div>
+    </div>
 </section>
 <!-- ///////////////////////////////////// Registration Section ================================ -->
 
@@ -169,7 +177,20 @@
            <p>  &copy; Copyright - Miss Ecowas Africa | All Rights Reserved</p> 
       </div>
 </footer>
- </div>
+</div>
+<!-- ===============modal========================== -->
+<script>
+  const open = document.getElementById("open");
+  const close = document.getElementById("close");
+  const modal_container = document.getElementById("modal_container");
+
+  open.addEventListener("click", ()=> { modal_container.classList.add("show");
+  });
+
+  close.addEventListener("click", ()=> { modal_container.classList.remove("show");
+  });
+</script>
+<!-- =============modal=========================== -->
 <script src="./assets/Js/script.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
