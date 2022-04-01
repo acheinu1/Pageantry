@@ -1,6 +1,6 @@
 .main-header {
-    /* position: fixed; */
-    position:absolute;
+    position: relative;
+    /* position:absolute; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

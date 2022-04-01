@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/Images/Group 29.svg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <style>
-        body iframe{
-            height:495vh;
-            /* margin-top: 10%; */
-        }
-        .iframeDiv{
-            text-align:center;
-            /* margin-top:40%; */
-            z-index: 4;
-        }
-        
-        h2{
-          text-align:center;
-          /* background-color:red;
-          margin-top: 20% !important; */
-        }
-        body{
-            background-color:burlywood;
-        }
-    </style>
-    <title>Miss Ecowas</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/registration.css">
+  <title>Document</title>
 </head>
 <body>
+   <!-- ?//////////////////////// Navbar Starts============================================= -->
+   <header class="main-header">
 
-      <!-- ?//////////////////////// Navbar Starts============================================= -->
-      <header class="main-header">
+    <!-- /////// Logo Container================= -->
+    <div class="logo">
+      <a href="./index.html">Miss Ecowas</a>
+    </div>
 
-        <div class="logo">
-          <!-- <a href="./index.html">Miss Ecowas</a> -->
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+
+    <!-- /////// navbar links ============ -->
+    <ul class="nav-links">
+      <li class="nav-link"><a href="./index.html">Home</a></li>
+      <li class="nav-link"><a href="https://www.instagram.com/missecowasnigorg/" target="_blank">About Us</a></li>
+      <li class="nav-link"><a href="https://wa.me/2348137007680" target="_blank">Contact Us</a></li>
+      <li class="nav-link"><button><a href="./index.html">Back</a></button></li>
+    </ul>
+
+  </header>
+  <!-- ////////////////////////////////// Navbar ends ===================================== -->
+
+
+
+  <section class="Registration_details">
+    <div class="Registration_card">
+  
+      <!--//////////////////////////////////Local Payment -->
+        <div class="Registration_L">
+          <h1>For Local Registration</h1>
+          <div class="Ldetails">
+            <h3> Pay the sum of <span>N5,000 naira</span>, into the account below</h3>
+            <h4> BANK: <span>ZENITH BANK</span></h4> <br>
+            <h4> ACCOUNT NAME: <span>ERLIN DORKODS LTD</span></h4> <br>
+            <h4> ACCOUNT NUMBER: <span>1221263447</span></h4> <br>
+            <p> After payment send evidence of payment to <span>08137007680</span> via WhatsApp for further instructions</p>
+          </div>
         </div>
-    
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <!-- <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label> -->
-
-        <ul class="nav-links">
-          <!-- <li class="nav-link"><a href="./index.html">Home</a></li> -->
-        </ul>
-
-      </header>
-<!-- ////////////////////////////////// Navbar ends ===================================== -->
-
-<!-- /////////////////////////Form=========================== -->
-<div class="form-container iframeDiv">
-  <!-- <h2>Register Free below</h2> -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGK5Sgxa4xFSt8eG2k_9yj_79lhQ-woyriOsX0lnxaqp3umw/viewform?embedded=true" width="640" height="1655" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
-</div>
-
-<!-- ////////////////////////////////////////// Connect with us========================= -->
-
-
-<!-- //////////////////////////////////////////Footer======================================= -->
-
+      
+      <!--//////////////////////////////////International Payment -->
+        <div class="Registration_I">
+          <h1>For International Registration</h1>
+          <div class="Idetails">
+            <h3>Scan the link below</h3>
+            <img src="https://i.postimg.cc/x1bQmP2J/Whats-App-Image-2022-03-30-at-3-19-04-PM.jpg">
+            <h4>Or click the button below</h4>
+            <button id="close"><a href="https://buy.stripe.com/eVabJz5Fje3v5KEcMO"> Click Me</a></button>
+          </div>
+        </div>
+      
+      </div>
+  </section>
 
 
 </body>

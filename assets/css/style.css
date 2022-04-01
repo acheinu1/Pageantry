@@ -26,125 +26,6 @@ width: 100%;
 
 /* <!-- ///////////////////////////////// Major Heading============================ --> */
 
-.container2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100%;
-  z-index: 4;
-  margin: 0 auto;
-  margin-bottom: 25%;
-  margin-left: 49%;
-  overflow-x: hidden;
-  position: absolute;
-  width: 60%;
-  /* background-color: aqua; */
-}
-.container2 .textcontainer {
-  z-index:4;
-  position: relative;
-  top:8%;
-  /* left:2%; */
-  display: flex;
-  max-width: 1200px;
-  color: #3E3635;
-  flex-direction: column;
-    align-items: flex-end;
-    margin: 0 auto;
-}
-.container2 .textcontainer  h1 span {
-  font-size: 110px;
-  font-weight: bolder !important;
-  cursor: default;
-  letter-spacing: -2px;
-}
-.container2 .textcontainer p{
- font-size: 30px;
- /* background-color:rgb(255, 255, 255); */
- margin-bottom:-10%;
- padding-right: 11px;
- font-weight: bolder;
- /* text-align:end; */
-}
-.glass{
-  background-color: #3E3635;
-  z-index: 4;
-}
-/* ///////////////////////////// Major heading media query================= */
-
-
-
-@media screen and (max-width: 768px){
-  .container2{
-    background-color: #00000000;
-    /* display: none; */
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    top: 14%;
-    left: 50%;
-    height: 100vh;
-    transform: translate(-50%, -50%);
-  }
-  .container2 .textcontainer {
-    max-width: 800px;
-    /* position: relative; */
-    top: -7%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-    /* text-align: center; */
-    align-items: center;
-  }
-  .container2 .textcontainer h1 span {
-    font-size: 75px;
-    cursor: default;
-    font-weight: 900px;
-    text-align: center;
-  }
-  .container2 .textcontainer p{
-    font-size: 26px;
-    margin-bottom:-14%;
-    padding-right: 0px;
-    font-weight: bolder;
-    text-align: center;
-    
-    /* text-align:end; */
-    /* flex-direction: row;
-    justify-content:center; */
-   }
-}
-
-
-/* ////////////////////////////// major heading media query small phones================ */
-
-@media screen and (max-width: 375px){
- 
-  .container2 .textcontainer {
-    max-width: 500px;
-    /* position: relative; */
-    top: -10%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-    /* text-align: center; */
-    align-items: center;
-  }
-  .container2 .textcontainer h1 span {
-    font-size: 65px;
-  }
-  .container2 .textcontainer p{
-    font-size: 19px;
-   
-    
-    /* text-align:end; */
-    /* flex-direction: row;
-    justify-content:center; */
-   }
-}
-
-/* //////////////////////////////////////Glide ============================ */
-
-
 
 /* .glider p{
   background-color: rgb(184, 20, 129);
@@ -152,154 +33,10 @@ width: 100%;
 } */
 
 
-
-
 *,*::before,*::after {
   box-sizing: border-box;
 }
 
-
-
-
-.glider-contain div {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #00000060;
-  /* display:none; */
-  
-}
-
-.glider {
-  border-radius: 20px;
-  width: 400px;
-  position: relative;
-  top: 50%;
-  /* left: 7%; */
-  margin-bottom: -90%;
-  /* margin-left: 50%; */
-}
-
-.glider div {
-  display: flex;
-  align-items: center;
-  border-radius: 17px;
-  width: 100%;
-}
-
-.glider div img {
-  
-  max-width: 40%;
-  max-height: 400px;
-}
-
-.glider div p {
-  font-weight: 600;
-  padding: 0rem 6rem;
-  font-size:20px;
-  max-width: 60%;
-  max-height: 400px;
-  color:white ;
-  margin:0;
-}
-.glider div p span {
-  font-size: 30px;
-}
-
-/* /////////////////////////////Glider box Media query==================== */
-
-@media screen and (max-width: 768px){
-
-  .glider-contain div {
-    display: flex;
-    max-width: 1050px;
-    margin: 0 auto;
-    /* background-color: #e01a1a60; */
-    /* display:none; */
-    top: -90%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    
-  }
-  .glider {
-    border-radius: 10px;
-    width: 350px;
-    max-height: 150px;
-    position: relative;
-    left: 0%;
-  
-  }
-  .glider div {
-    /* display:none; */
-    max-width: 1300px;
-  }
-  .glider div p {
-    font-size: 18px;
-    padding:0 0px;
-    /* margin: 0px; */
-    text-align: right;
-
-  }
-
-  .glider div img {
-    /* display:none; */
-    max-width: 110px;
-    /* max-height: 400px; */
-  }
-
-  .glider div p span {
-    font-size: 22px;
-  }
-
-}
-
-/* /////////////////////////////// Glider media query for small phones */
-
-@media screen and (max-width: 375px){
-
-  .glider-contain div {
-    display: flex;
-    max-width: 900px;
-    margin: 0 auto;
-    /* background-color: #e01a1a60; */
-    /* display:none; */
-    top: -120%;
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    
-  }
-  .glider {
-    border-radius: 10px;
-    width: 300px;
-    max-height: 150px;
-    position: relative;
-    left: 0%;
-  
-  }
-  .glider div {
-    /* display:none; */
-    /* background-color:#2980b9; */
-    max-width: 900px;
-  }
-  .glider div p {
-    font-size: 16px;
-    /* padding:0 10px; */
-    /* margin: 0px; */
-    text-align: right;
-
-  }
-
-  .glider div img {
-    /* display:none; */
-    max-width: 90px;
-    /* max-height: 400px; */
-  }
-
-  .glider div p span {
-    font-size: 20px;
-  }
-
-}
 
 /* ======================= background carousel============================ */
 
@@ -310,35 +47,7 @@ width: 100%;
     background-size: cover;
     background-position: center;
     }
-    /* .bg2{
-    background-image: url(https://i.postimg.cc/mgKDSZVh/Banner-3-1.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    }
-    .bg3{
-    background-image: url(https://i.postimg.cc/MHfq35qL/Banner-4.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    } */
-    /* .carousel{
-      position: absolute;
-    } */
-    .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 20%;
-    }
-    .carousel-caption h4 {
-    font-size: 65px;
-    font-family: poppins;
-    letter-spacing: 2px;
-    }
-    .carousel-caption p {
-    font-size: 20px;
-    font-family: poppins;
-    }
+   
     
     .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -402,22 +111,6 @@ width: 100%;
       background-position: center;
       }
 
-    .bg2{
-        background-image: url(https://i.postimg.cc/HL3Yrj66/i-Phone-11-Pro-Max-7.png);
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: center;
-        }
-
-    .bg3{
-        background-image: url(https://i.postimg.cc/bJBqRWcb/i-Phone-11-Pro-Max-6.png);
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: center;
-        }
-      .carousel-item {
-        height: 24rem;
-      }
     
   }
 
@@ -432,29 +125,6 @@ width: 100%;
       background-color: #ffffff;
       overflow-x: hidden;
   }
-  /* .bg1{
-    background-image: url(https://i.postimg.cc/W3wxVpjT/i-Phone-11-Pro-Max-1.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    }
-
-  .bg2{
-      background-image: url(https://i.postimg.cc/G2C668WX/i-Phone-11-Pro-Max-2.png);
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      }
-
-  .bg3{
-      background-image: url(https://i.postimg.cc/6QRDHLm7/i-Phone-11-Pro-Max-3.png);
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      }
-    .carousel-item {
-      height: 24rem;
-    } */
   
 }
 
@@ -534,6 +204,12 @@ width: 100%;
   background-clip: padding-box;
   box-shadow: 10 10 10px rgba(45, 55, 68, 0.30);
 }
+.wcard p{
+  font-size:18px;
+
+}
+
+
 .main-section .card button{
  padding: 10px 30px;
  margin-bottom:20px;
