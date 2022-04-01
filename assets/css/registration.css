@@ -56,7 +56,7 @@ body{
 .Ldetails p{
     font-size:16px;
     text-transform:capitalize;
-    margin-top: 50px;
+    margin-top: 40px;
     font-style: italic;
 }
 .Ldetails h4{
@@ -168,9 +168,7 @@ body{
     display: flex;
     width:80%;
     padding: 2%;
-    align-items: space-evenly;
     margin:30px auto;
-    overflow-x: hidden;
     }
     .alltags{
         background-color: #181616;
@@ -180,10 +178,75 @@ body{
               /* Additional tunning proposed by the community */
               position: relative;
               width: 100%;
-      }
-    body{
-    overflow-x:hidden;
     }
 
+    .Ldetails p{
+        font-size:13px;
+        text-transform:capitalize;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+    .Ldetails h4{
+        color: #ec1b30;
+    }
+    
+    .Ldetails h4 span{
+        color: #fff;
+        font-size:14px;
+        letter-spacing: 1px;
+    }
+    
+    .Idetails{
+        padding:5%;  
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+    .Ldetails{
+        padding:5%;  
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin-top:5px;
+    }
+    
+    .Ldetails h3 span{
+        color:#ec1b30;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .Ldetails h3{
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    
+    .Registration_L h1{
+        margin: 10px 0;
+        font-size:24px;
+    }
+
+    .Registration_I h1{
+        margin: 10px 0;
+        font-size:24px;
+    }
+    
+    .Registration_L h3{
+        margin-bottom: 10px;
+        font-size:18px;
+        font-weight: 200;
+    }
+    
+    .Ldetails p span{
+        color: #ec1b30;
+        font-weight:bold;
+    }
+    
+    /* .Ldetails p{
+        font-size:16px;
+        text-transform:capitalize;
+        margin-top: 40px;
+        font-style: italic;
+    } */
   }
 
