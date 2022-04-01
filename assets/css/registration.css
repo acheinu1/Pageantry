@@ -172,9 +172,18 @@ body{
     margin:30px auto;
     overflow-x: hidden;
     }
-
+    .alltags{
+        background-color: #181616;
+      
+              /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+              overflow-x: hidden !important;
+              /* Additional tunning proposed by the community */
+              position: relative;
+              width: 100%;
+      }
     body{
     overflow-x:hidden;
     }
 
   }
+

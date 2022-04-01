@@ -20,6 +20,7 @@
     -webkit-transition: .4s ease-out;
     transition: .4s ease-out;
     margin:20px auto;
+    /* overflow-x:hidden; */
   }
   
   .main-header a {
@@ -152,6 +153,8 @@
   @media screen and (max-width: 767px) {
     .main-header{
       margin: 0;
+      z-index: 1000;
+      height: 100%;
     }
     .main-header .menu-icon {
       display: block;
